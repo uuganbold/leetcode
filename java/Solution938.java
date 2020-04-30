@@ -25,7 +25,7 @@ class Solution938 {
         int sum=0;
         Stack<TreeNode> stack=new Stack<>();
         stack.push(root);
-        while(!stack.isEmpty()s){
+        while(!stack.isEmpty()){
             TreeNode node=stack.pop();
             if(node.val>=L&&root.val<=R) sum+=node.val;
             if(root.val>L) stack.push(root.left);
