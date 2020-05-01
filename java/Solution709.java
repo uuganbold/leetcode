@@ -1,4 +1,8 @@
 class Solution709 {
+    /*
+    T: O(n)
+    S: O(n)
+    */
     public String toLowerCase(String str) {
         int diff='A'-'a';
         char[] result=new char[str.length()];
