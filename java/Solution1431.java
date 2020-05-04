@@ -3,6 +3,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 class Solution1431 {
+    /**
+     * T: O(n)
+     * S: O(1)
+     */
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int max=Integer.MIN_VALUE;
         
