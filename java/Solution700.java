@@ -12,6 +12,10 @@ class Solution700 {
                 this.right = right;
             }
     }
+    /**
+     * T: O(logN)
+     * S: O(logN)
+     */
     public TreeNode searchBSTRecursive(TreeNode root, int val) {
         if(root==null) return null;
         if(root.val==val) return root;
@@ -20,6 +24,10 @@ class Solution700 {
         }else return searchBSTRecursive(root.left,val);
     }
     
+    /**
+     * T: O(logN)
+     * S: O(1)
+     */
     public TreeNode searchBST(TreeNode root, int val){
         while(root!=null){
             if(root.val==val) return root;
