@@ -62,7 +62,7 @@ class Solution590 {
     
     /**
      * T: O(N)
-     * S: O(h)
+     * S: O(N)
      */
     private void postorderOneStack(Node root, List<Integer> list){
         if(root==null) return;
