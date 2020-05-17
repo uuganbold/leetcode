@@ -20,4 +20,34 @@ class Solution412 {
         }
         return ans;
     }
+
+
+    /*
+        T: O(N)
+        S: O(1)
+    */
+    public List<String> fizzBuzzExtensible(int n) {
+        List<String> ans=new ArrayList<>();
+        
+        Map<Integer,String> mapping=new HashMap<>(){
+            {
+                put(3,"Fizz");
+                put(5,"Buzz");
+            }
+        };
+        
+        for(int i=1;i<=n;i++){
+            StringBuilder builder=new StringBuilder("");
+            for(int key:mapping.keySet()){
+                if(i%key==0) builder.append(mapping.get(key));
+            }
+            
+            if(builder.length()==0){
+                builder.append(i);
+            }
+            
+            ans.add(builder.toString());
+        }
+        return ans;
+    }
 }
