@@ -1,4 +1,4 @@
-class Solution671 {
+class Solution674 {
 
     /*
         T: O(N)
