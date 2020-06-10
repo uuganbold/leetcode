@@ -10,17 +10,14 @@ class Solution482 {
         int counter=K;
         for(int i=S.length()-1;i>=0;i--){
             if(S.charAt(i)!='-'){
-                ans.append(Character.toUpperCase(S.charAt(i)));
-                counter--;
                 if(counter==0){
                     ans.append('-');
                     counter=K;
                 }
+                ans.append(Character.toUpperCase(S.charAt(i)));
+                counter--;
             }
-        }
-        
-        if(ans.length()!=0&&ans.charAt(ans.length()-1)=='-') ans.deleteCharAt(ans.length()-1);
-        
+        }        
         return ans.reverse().toString();
     }
     
