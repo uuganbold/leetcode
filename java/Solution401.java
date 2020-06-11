@@ -1,5 +1,5 @@
 import java.util.*;
-class Solution {
+class Solution401 {
     
     /*
         T: O(12*60)
