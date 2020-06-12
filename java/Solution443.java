@@ -20,6 +20,9 @@ class Solution443 {
         return write;
     }
     
+    /*
+        T: O(logC)
+    */
     private int putCountInPlace(char[] chars, int start,int count){
         if(count==1){
             return start;
