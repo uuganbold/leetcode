@@ -1,5 +1,5 @@
 import java.util.*;
-    class Solution {
+    class Solution989 {
         /*
             T: O(max(A,logK))
             S: O(max(A,logK))
