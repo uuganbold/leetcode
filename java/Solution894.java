@@ -18,6 +18,10 @@ class Solution894 {
     
     Map<Integer,List<TreeNode>> dp=new HashMap<>();
     
+    /*
+        T: O(2^N)
+        S: O(2^N)
+    */
     public List<TreeNode> allPossibleFBT(int N) {
         
         if(!dp.containsKey(N)){
