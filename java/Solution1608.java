@@ -1,0 +1,15 @@
+import java.util.*;
+public class Solution1608 {
+    public int specialArray(int[] nums) {
+        Arrays.sort(nums);
+        for(int i = 0; i < nums.length; i++) {
+            int n = nums.length-i;
+            boolean cond1 =  n<=nums[i];
+            boolean cond2 = (i-1<0) || (n>nums[i-1]);
+            if (cond1 && cond2) return n;
+        }
+        return -1;
+    }
+           //  1 3 6 8 9 11 15 16 18    
+
+}
